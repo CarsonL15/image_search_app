@@ -1,16 +1,17 @@
-# image_search_app1
+# Image Explorer
 
-A new Flutter project.
+Image Explorer is a Flutter application that allows users to search for high-quality images via the Pixabay API and generate AI-powered images using OpenAI's API. The app features a polished onboarding experience, smooth full-screen image previews with saving functionality, and responsive UI for both Android and iOS.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Image Search:**  
+  Search for images using the Pixabay API with SafeSearch enabled.
 
-A few resources to get you started if this is your first Flutter project:
+- **AI Image Generation:**  
+  Generate AI images using OpenAI based on a user-provided prompt.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Onboarding Screen:**  
+  A sleek onboarding overlay introduces the app's features.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Full-Screen Image Preview:**  
+  Tap an image to view it full-screen with a fade transition, blurred background, and a "Save Image" button that saves the photo to the device's camera roll.

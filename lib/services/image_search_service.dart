@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 
 /// A service that fetches images from the Pixabay API based on a search query.
@@ -6,8 +7,8 @@ import 'package:http/http.dart' as http;
 /// This class uses the Pixabay API with SafeSearch enabled and returns a list
 /// of image URLs from the search results.
 class ImageSearchService {
-  /// Your Pixabay API key.
-  static const String _apiKey = '49225781-ef58f969da3b3d2de73241729';
+  /// Your Pixabay API key loaded from the .env file.
+  static final String _apiKey = dotenv.env['PIXABAY_API_KEY'] ?? '';
 
   /// The base URL for the Pixabay API.
   static const String _baseUrl = 'https://pixabay.com/api/';
@@ -29,8 +30,7 @@ class ImageSearchService {
     if (response.statusCode == 200) {
       final Map<String, dynamic> jsonData = json.decode(response.body);
       final List<dynamic> hits = jsonData['hits'];
-
-      // Convert hits to a list of image URLs
+      // Convert hits to a list of image URLs.
       return hits.map<String>((dynamic hit) => hit['webformatURL'] as String).toList();
     } else {
       throw Exception('Failed to load images');

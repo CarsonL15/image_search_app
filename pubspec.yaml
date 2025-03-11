@@ -14,6 +14,8 @@ dependencies:
   # UI and utility dependencies
   cupertino_icons: ^1.0.8
   auto_size_text: ^3.0.0
+  flutter_dotenv: ^5.2.1
+
 
   # Networking and file management
   http: ^0.13.0
@@ -31,6 +33,7 @@ flutter:
   uses-material-design: true
 
   # Uncomment the following lines if you add assets (e.g., images, fonts) later.
-  # assets:
+  assets:
+    - .env
   #   - assets/images/
   #   - assets/icons/

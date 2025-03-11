@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 /// A service for generating AI images using OpenAI's API.
 ///
@@ -8,9 +9,8 @@ import 'package:http/http.dart' as http;
 /// In case of errors (such as rate limits or connection issues), it displays an
 /// error dialog to the user and returns an empty list.
 class AiGenerationService {
-  /// Your OpenAI API key.
-  static const String _apiKey =
-      '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';
+  /// Your OpenAI API key loaded from the .env file.
+  static final String _apiKey = dotenv.env['OPENAI_API_KEY'] ?? '';
 
   /// The base URL for the OpenAI image generations endpoint.
   static const String _apiUrl = 'https://api.openai.com/v1/images/generations';

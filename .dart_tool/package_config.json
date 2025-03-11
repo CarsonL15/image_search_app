@@ -62,6 +62,12 @@
       "languageVersion": "3.7"
     },
     {
+      "name": "flutter_dotenv",
+      "rootUri": "file:///Users/carsonlayden/.pub-cache/hosted/pub.dev/flutter_dotenv-5.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///Users/carsonlayden/.pub-cache/hosted/pub.dev/flutter_lints-5.0.0",
       "packageUri": "lib/",
@@ -260,7 +266,7 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-03-11T06:36:33.122166Z",
+  "generated": "2025-03-11T08:11:47.395781Z",
   "generator": "pub",
   "generatorVersion": "3.7.0",
   "flutterRoot": "file:///Users/carsonlayden/development/flutter",
