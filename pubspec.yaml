@@ -1,0 +1,36 @@
+name: image_search_app
+description: "A new Flutter project for image search and AI generation."
+publish_to: 'none' # This project is not published to pub.dev.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.7.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI and utility dependencies
+  cupertino_icons: ^1.0.8
+  auto_size_text: ^3.0.0
+
+  # Networking and file management
+  http: ^0.13.0
+  path_provider: ^2.0.11
+
+  # Plugin to save images to gallery
+  gallery_saver: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Uncomment the following lines if you add assets (e.g., images, fonts) later.
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
